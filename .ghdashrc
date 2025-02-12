@@ -1,0 +1,12 @@
+{
+  "owner": "nrjdalal",
+  "columns": [
+    "stargazers_url"
+  ],
+  "dropdown": [
+    "description"
+  ],
+  "exclude": [
+    "fork"
+  ]
+}
