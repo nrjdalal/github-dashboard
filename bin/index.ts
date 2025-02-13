@@ -124,30 +124,24 @@ const main = async () => {
 
     // ~ add npm if exists
 
-    repos = repos.map((repo: any) => {
+    for (const repo of repos) {
       const npm = values.npm
         ?.find((npm: string) => npm.split("=")[0] === repo.name)
         ?.split("=")[1]
 
-      console.log(npm)
-
-      return {
-        name: repo.name,
-        columns: {
-          stargazers_count: repo.stargazers_count ? repo.stargazers_count : "",
-          forks_count: repo.forks_count ? repo.forks_count : "",
-          open_issues: repo.open_issues ? repo.open_issues : "",
-          npm: npm ? weeklyDownloads(npm) : "",
-        },
-        dropdown: {
-          description: repo.description ? `<p>${repo.description}</p>` : "",
-          created: repo.created_at,
-          updated: repo.updated_at,
-        },
+      repo.columns = {
+        stargazers_count: repo.stargazers_count ? repo.stargazers_count : "",
+        forks_count: repo.forks_count ? repo.forks_count : "",
+        open_issues: repo.open_issues ? repo.open_issues : "",
+        npm: npm ? await weeklyDownloads(npm) : "",
       }
-    })
 
-    console.log(repos)
+      repo.dropdown = {
+        description: repo.description ? `<p>${repo.description}</p>` : "",
+        created: repo.created_at,
+        updated: repo.updated_at,
+      }
+    }
 
     let render =
       `| Repository | ${values.columns.join(" | ")} | Information |\n| :---: | ${values.columns.map(() => " :---: ").join(" | ")} | :---: |\n`
