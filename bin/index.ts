@@ -132,7 +132,7 @@ const main = async () => {
         forks_count: repo.forks_count ? repo.forks_count : "",
         open_issues: repo.open_issues ? repo.open_issues : "",
         npm: npmData.find((npm: any) =>
-          npm?.package?.links?.repository?.includes(repo.name),
+          npm?.package?.links?.repository?.includes("/" + repo.name),
         )
           ? npmData.find((npm: any) =>
               npm?.package?.links?.repository?.includes(repo.name),
