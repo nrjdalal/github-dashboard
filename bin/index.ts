@@ -2,7 +2,6 @@
 import fs from "node:fs"
 import { parseArgs } from "node:util"
 import { getRepos } from "@/utils/get-repos"
-import { weeklyDownloads } from "@/utils/npm/weekly-downloads"
 import { author, name, version } from "~/package.json"
 
 const helpMessage = `Version:
@@ -63,11 +62,6 @@ const main = async () => {
           short: "f",
           default: ["fork"],
         },
-        npm: {
-          type: "string",
-          multiple: true,
-          short: "n",
-        },
         help: { type: "boolean", short: "h" },
         version: { type: "boolean", short: "v" },
       },
@@ -122,18 +116,28 @@ const main = async () => {
 
     repos = [...recents, ...popular]
 
+    const npmData = (
+      await (
+        await fetch(
+          `https://registry.npmjs.org/-/v1/search?text=author:${positionals[0]}&size=1000`,
+        )
+      ).json()
+    ).objects
+
     // ~ add npm if exists
 
     for (const repo of repos) {
-      const npm = values.npm
-        ?.find((npm: string) => npm.split("=")[0] === repo.name)
-        ?.split("=")[1]
-
       repo.columns = {
         stargazers_count: repo.stargazers_count ? repo.stargazers_count : "",
         forks_count: repo.forks_count ? repo.forks_count : "",
         open_issues: repo.open_issues ? repo.open_issues : "",
-        npm: npm ? await weeklyDownloads(npm) : "",
+        npm: npmData.find((npm: any) =>
+          npm?.package?.links?.repository?.includes(repo.name),
+        )
+          ? npmData.find((npm: any) =>
+              npm?.package?.links?.repository?.includes(repo.name),
+            ).downloads.weekly
+          : "",
       }
 
       repo.dropdown = {
