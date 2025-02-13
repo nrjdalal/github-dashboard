@@ -7,6 +7,18 @@
     "description"
   ],
   "exclude": [
-    "fork"
+    "nrjdalal",
+    "png-icons",
+    "starter"
+  ],
+  "npm": [
+    "ai-x-terminal=ai-x-terminal",
+    "github-dashboard=github-dashboard",
+    "gitpick=gitpick",
+    "google-parser=@nrjdalal/google-parser",
+    "karabiner-human-config=karabiner-human-config",
+    "pglaunch=pglaunch",
+    "shadcnext=shadcnext",
+    "zshify=zshify"
   ]
 }

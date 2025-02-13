@@ -130,9 +130,7 @@ const main = async () => {
           stargazers_count: repo.stargazers_count
             ? `[![stars](https://img.shields.io/github/stars/${positionals[0]}/${repo.name}?label=&style=&color=white)](https://github.com/${positionals[0]}/${repo.name}/stargazers)`
             : "",
-          forks_count: repo.forks_count
-            ? `[![forks](https://img.shields.io/github/forks/${positionals[0]}/${repo.name}?label=&style=&color=white)](https://github.com/${positionals[0]}/${repo.name}/forks)`
-            : "",
+          forks_count: repo.forks_count ? repo.forks_count : "",
           open_issues: repo.open_issues
             ? `[![issues](https://img.shields.io/github/issues/${positionals[0]}/${repo.name}?label=&style=&color=white)](https://github.com/${positionals[0]}/${repo.name}/issues)`
             : "",
