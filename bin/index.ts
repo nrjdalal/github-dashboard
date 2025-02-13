@@ -127,13 +127,9 @@ const main = async () => {
       return {
         name: repo.name,
         columns: {
-          stargazers_count: repo.stargazers_count
-            ? `[![stars](https://img.shields.io/github/stars/${positionals[0]}/${repo.name}?label=&style=&color=white)](https://github.com/${positionals[0]}/${repo.name}/stargazers)`
-            : "",
+          stargazers_count: repo.stargazers_count ? repo.stargazers_count : "",
           forks_count: repo.forks_count ? repo.forks_count : "",
-          open_issues: repo.open_issues
-            ? `[![issues](https://img.shields.io/github/issues/${positionals[0]}/${repo.name}?label=&style=&color=white)](https://github.com/${positionals[0]}/${repo.name}/issues)`
-            : "",
+          open_issues: repo.open_issues ? repo.open_issues : "",
           npm: values.npm
             ?.find((npm: string) => npm.split("=")[0] === repo.name)
             ?.split("=")[1]
