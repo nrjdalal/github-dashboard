@@ -5,10 +5,10 @@
 
 | Repository | Stars | Forks | Issues | NPM | Information |
 | :---: |  :---:  |  :---:  |  :---:  |  :---:  | :---: |
+| github-dashboard |  |  |  | 174 | <details><summary><a href="https://github.com/nrjdalal/github-dashboard">Link</a></summary><br/><p>Created: Mon Feb 10 2025</p><p>Updated: Fri Feb 14 2025</p></details> |
 | karabiner-human-config |  |  |  | 2801 | <details><summary><a href="https://github.com/nrjdalal/karabiner-human-config">Link</a></summary><br/><p>The easiest way to write Karabiner-Elements configuration files, ever!</p><p>Created: Fri Feb 07 2025</p><p>Updated: Thu Feb 13 2025</p></details> |
 | awesome-templates | 5 |  |  |  | <details><summary><a href="https://github.com/nrjdalal/awesome-templates">Link</a></summary><br/><p>Explore a curated collection of up-to-date templates for various projects and frameworks, refreshed every 8 hours.</p><p>Created: Wed Jan 15 2025</p><p>Updated: Thu Feb 13 2025</p></details> |
 | gitpick | 2 |  |  | 199 | <details><summary><a href="https://github.com/nrjdalal/gitpick">Link</a></summary><br/><p>With gitpick, you can clone precisely what you need.</p><p>Created: Wed Jan 15 2025</p><p>Updated: Thu Feb 13 2025</p></details> |
-| github-dashboard |  |  |  | 174 | <details><summary><a href="https://github.com/nrjdalal/github-dashboard">Link</a></summary><br/><p>Created: Mon Feb 10 2025</p><p>Updated: Thu Feb 13 2025</p></details> |
 | zshify | 2 |  |  | 245 | <details><summary><a href="https://github.com/nrjdalal/zshify">Link</a></summary><br/><p>Zshify is a minimalistic, one command installation to customize the prompt of your Zshell or Zsh!</p><p>Created: Tue May 11 2021</p><p>Updated: Thu Feb 13 2025</p></details> |
 | rdt-li | 237 | 17 |  |  | <details><summary><a href="https://github.com/nrjdalal/rdt-li">Link</a></summary><br/><p>rdt.li self hostable, feature rich, minimalistic and open source URL shortener. Built with Next.js, Drizzle, NextAuth and Postgres.</p><p>Created: Sun Nov 05 2023</p><p>Updated: Wed Feb 12 2025</p></details> |
 | ai-x-terminal | 1 |  |  | 0 | <details><summary><a href="https://github.com/nrjdalal/ai-x-terminal">Link</a></summary><br/><p>AI X Terminal is a powerful command-line tool that enhances your terminal capabilities using OpenAI's API. Integrate AI seamlessly into your workflow with functionalities to append file contents or entire workspace details to queries, facilitating an enriched coding and development experience.</p><p>Created: Wed Nov 20 2024</p><p>Updated: Mon Feb 10 2025</p></details> |
@@ -24,7 +24,7 @@
 | readrave | 1 |  |  |  | <details><summary><a href="https://github.com/nrjdalal/readrave">Link</a></summary><br/><p>Documentation in Next.js has never been easier (releasing soon)</p><p>Created: Mon May 13 2024</p><p>Updated: Tue Aug 13 2024</p></details> |
 | silicon-virtualizer | 1 |  |  |  | <details><summary><a href="https://github.com/nrjdalal/silicon-virtualizer">Link</a></summary><br/><p>Ubuntu VMs on demand for Silicon based Apple Macs, aka Macs own QEMU based Multipass</p><p>Created: Sat Jun 05 2021</p><p>Updated: Thu Nov 02 2023</p></details> |
 | GIT-Website-Workflow | 1 |  |  |  | <details><summary><a href="https://github.com/nrjdalal/GIT-Website-Workflow">Link</a></summary><br/><p>A simple script to set up an efficient development workflow using Git to manage a live website</p><p>Created: Sun Jun 14 2020</p><p>Updated: Thu Nov 02 2023</p></details> |
-| dalal |  |  |  | 2801 | <details><summary><a href="https://github.com/nrjdalal/dalal">Link</a></summary><br/><p>Created: Tue Feb 04 2025</p><p>Updated: Thu Feb 06 2025</p></details> |
+| dalal |  |  |  |  | <details><summary><a href="https://github.com/nrjdalal/dalal">Link</a></summary><br/><p>Created: Tue Feb 04 2025</p><p>Updated: Thu Feb 06 2025</p></details> |
 
 <!-- nrjdalal/github-dashboard -->
 <!-- prettier-ignore-end -->

@@ -67,8 +67,6 @@ const main = async () => {
       },
     })
 
-    console.log(positionals, values)
-
     if (values.version) {
       console.log(`${name}@${version}`)
       process.exit(0)
