@@ -160,7 +160,7 @@ const main = async () => {
         .replace("npm", "NPM") +
       repos
         .map((repo: any) => {
-          return `| ${repo.name} | ${values.columns.map((prop: string) => repo.columns[prop]).join(" | ")} | <details><summary><a href="https://github.com/${positionals[0]}/${repo.name}">Github</a></summary><br/>${repo.dropdown.description}<p>Created: ${new Date(repo.dropdown.created).toDateString()}</p><p>Updated: ${new Date(repo.dropdown.updated).toDateString()}</p></details> |`
+          return `| ${repo.name} | ${values.columns.map((prop: string) => repo.columns[prop]).join(" | ")} | <details><summary><a href="https://github.com/${positionals[0]}/${repo.name}">Link</a></summary><br/>${repo.dropdown.description}<p>Created: ${new Date(repo.dropdown.created).toDateString()}</p><p>Updated: ${new Date(repo.dropdown.updated).toDateString()}</p></details> |`
         })
         .join("\n")
 
