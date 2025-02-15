@@ -129,11 +129,17 @@ const main = async () => {
         stargazers_count: repo.stargazers_count ? repo.stargazers_count : "",
         forks_count: repo.forks_count ? repo.forks_count : "",
         open_issues: repo.open_issues ? repo.open_issues : "",
-        npm: npmData.find((npm: any) =>
-          npm?.package?.links?.repository?.includes("/" + repo.name),
+        npm: npmData.find(
+          (npm: any) =>
+            npm?.package?.links?.repository?.endsWith("/" + repo.name) ||
+            npm?.package?.links?.repository?.endsWith("/" + repo.name + ".git"),
         )
-          ? npmData.find((npm: any) =>
-              npm?.package?.links?.repository?.includes(repo.name),
+          ? npmData.find(
+              (npm: any) =>
+                npm?.package?.links?.repository?.endsWith("/" + repo.name) ||
+                npm?.package?.links?.repository?.endsWith(
+                  "/" + repo.name + ".git",
+                ),
             ).downloads.weekly
           : "",
       }
